@@ -1,8 +1,8 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader =' ' 
+vim.g.maplocalleader = ' '
 vim.cmd([[set shiftwidth=4]])
 vim.api.nvim_create_user_command(
-  'Ex',                  -- Command name
+  "Ex",                  -- Command name
   function()                    -- Command action
 	vim.cmd("Oil")
   end,
@@ -13,3 +13,5 @@ vim.keymap.set("i","jj","<Esc>")
 vim.keymap.set("v","<Tab>",">")
 vim.keymap.set("v","<S-Tab>","<")
 vim.cmd(":set virtualedit=onemore")
+vim.keymap.set("n", "<Tab>", "v>")
+vim.keymap.set("n", "<S-Tab>","v<")

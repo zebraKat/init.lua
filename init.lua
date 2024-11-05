@@ -47,7 +47,7 @@ require'lspconfig'.luau_lsp.setup{
       },
     plugin = {
 	    enabled = true,
-	    port = 3667,
+	    port = 3999,
       },
 }
 ----oil
@@ -59,3 +59,7 @@ require("oil").setup({
 	end,
     }
 })
+
+-- COLOR THEME
+vim.cmd([[colorscheme yin]])
+

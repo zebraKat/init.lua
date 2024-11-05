@@ -19,7 +19,8 @@ require("lazy").setup({
   spec = { -- plugins
    	{"zebraKat/warlock-cmp"}, -- default theme
 	{"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"}, -- treesitter
-	{ import = "plugins" },	
+	{ import = "plugins" },
+	{ import = "themes" }
     },
     install = { colorscheme = { "gruvbox" } },
     -- automatically check for plugin updates
