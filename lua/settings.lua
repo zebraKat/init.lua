@@ -1,16 +1,16 @@
-vim.opt.mouse = "a"
-vim.opt.number = true
-vim.opt.showmode = false
-vim.opt.breakindent = true
-vim.opt.cursorline = true
-vim.opt.relativenumber = true
+vim.g.mapleader = ' '
+vim.o.mouse = "a"
+vim.o.number = true
+vim.o.showmode = false
+vim.o.tabstop = 4
+vim.o.breakindent = true
+vim.o.cursorline = true
+vim.o.relativenumber = true
 vim.o.virtualedit = "onemore"
 
-vim.keymap.set("i", "jj", "<ESC>", { silent = true })
-vim.opt.tabstop = 4
 vim.cmd("set expandtab sw=4 sts=4")
 
 vim.schedule(function()
-	vim.opt.clipboard = 'unnamedplus'
+	vim.o.clipboard = 'unnamedplus'
 end)
 
